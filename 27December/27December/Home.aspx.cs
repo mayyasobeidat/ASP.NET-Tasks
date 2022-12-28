@@ -16,12 +16,12 @@ namespace _27December
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+
             if (Page.IsValid)
             {
                 ClientScript.RegisterClientScriptBlock(this.GetType(), "alert",
-                   "swal('Good job!', 'You clicked Success button!', 'success')", true);
+                   "swal('Register Completed!', 'You clicked Success button!', 'success')", true);
             }
-
         }
     }
 }
