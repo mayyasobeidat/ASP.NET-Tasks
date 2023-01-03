@@ -41,8 +41,8 @@
                <div class="form-group">
             <asp:Label  runat="server" ID="Label1" CssClass="col-md-2 control-label" AssociatedControlID="RadioButtonList1" Text="Role"/>
                    <asp:RadioButtonList ID="RadioButtonList1" runat="server" OnSelectedIndexChanged="RadioButtonList1_SelectedIndexChanged" RepeatDirection="Horizontal">
-                       <asp:ListItem>Admin</asp:ListItem>
-                       <asp:ListItem>User</asp:ListItem>
+                       <asp:ListItem Value="1">Admin</asp:ListItem>
+                       <asp:ListItem Value="2">User</asp:ListItem>
                    </asp:RadioButtonList>
         </div>
 
