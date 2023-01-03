@@ -24,13 +24,13 @@ namespace _2January
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// exp control.
+        /// Excellent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label exp;
+        protected global::System.Web.UI.WebControls.Label Excellent;
 
         /// <summary>
         /// Label2 control.
@@ -42,13 +42,13 @@ namespace _2January
         protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
-        /// vgp control.
+        /// VeryGood control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label vgp;
+        protected global::System.Web.UI.WebControls.Label VeryGood;
 
         /// <summary>
         /// Label3 control.
@@ -60,13 +60,13 @@ namespace _2January
         protected global::System.Web.UI.WebControls.Label Label3;
 
         /// <summary>
-        /// gp control.
+        /// Good control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label gp;
+        protected global::System.Web.UI.WebControls.Label Good;
 
         /// <summary>
         /// Label5 control.
@@ -78,13 +78,13 @@ namespace _2January
         protected global::System.Web.UI.WebControls.Label Label5;
 
         /// <summary>
-        /// mmm control.
+        /// Weak control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label mmm;
+        protected global::System.Web.UI.WebControls.Label Weak;
 
         /// <summary>
         /// Label4 control.
@@ -96,12 +96,21 @@ namespace _2January
         protected global::System.Web.UI.WebControls.Label Label4;
 
         /// <summary>
-        /// ppp control.
+        /// Poor control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label ppp;
+        protected global::System.Web.UI.WebControls.Label Poor;
+
+        /// <summary>
+        /// Label6 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label6;
     }
 }

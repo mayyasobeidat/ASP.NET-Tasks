@@ -2,7 +2,7 @@
 
 <style>
     .divv{
-        width:20%;
+        width:30%;
      
         border:2px solid black;
     }
@@ -51,18 +51,18 @@
             </td>
             <td>
     <div class="md">
-    <asp:Label ID="exp" runat="server" Text="" Width="" Height="20px" CssClass="sd"></asp:Label>
+    <asp:Label ID="Excellent" runat="server" Text="" Width="" Height="20px" CssClass="sd"></asp:Label>
     </div>
             </td>
         </tr>
         <tr>
             <td>
 
-    <asp:Label ID="Label2" runat="server" Text="Verygood"></asp:Label>
+    <asp:Label ID="Label2" runat="server" Text="VeryGood"></asp:Label>
             </td>
             <td>
     <div class="md">
-    <asp:Label ID="vgp" runat="server" Text="" Width="" Height="20px" CssClass="sd2"></asp:Label></div>
+    <asp:Label ID="VeryGood" runat="server" Text="" Width="" Height="20px" CssClass="sd2"></asp:Label></div>
             </td>
         </tr>
         <tr>
@@ -72,7 +72,7 @@
             </td>
             <td>
      <div class="md">
-    <asp:Label ID="gp" runat="server" Text="" Width=""   Height="20px" CssClass="sd3"></asp:Label></div>
+    <asp:Label ID="Good" runat="server" Text="" Width=""   Height="20px" CssClass="sd3"></asp:Label></div>
             </td>
         </tr>
         <tr>
@@ -82,7 +82,7 @@
             </td>
             <td>
      <div class="md">
-    <asp:Label ID="mmm" runat="server" Text="" Width=""   Height="20px" CssClass="sd4"></asp:Label></div>
+    <asp:Label ID="Weak" runat="server" Text="" Width=""   Height="20px" CssClass="sd4"></asp:Label></div>
             </td>
         </tr>
         <tr>
@@ -92,7 +92,20 @@
             </td>
             <td>
           <div class="md">
-    <asp:Label ID="ppp" runat="server" Text="" Width=""  Height="20px" CssClass="sd5"></asp:Label></div>
+    <asp:Label ID="Poor" runat="server" Text="" Width=""  Height="20px" CssClass="sd5"></asp:Label></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td>Number of voters :</td>
+            <td>
+                <asp:Label ID="Label6" runat="server" Text="Label"></asp:Label>
             </td>
         </tr>
     </table>

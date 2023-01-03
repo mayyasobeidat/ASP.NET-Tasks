@@ -11,6 +11,7 @@ namespace _2January
     public partial class WebUserControl2 : System.Web.UI.UserControl
     {
         protected void Page_Load(object sender, EventArgs e)
+
         {
             SqlConnection connect = new SqlConnection("data source=DESKTOP-HDOBIGI\\SQLEXPRESS01;database=voiting; integrated security=SSPI");
             connect.Open();
@@ -20,63 +21,81 @@ namespace _2January
             {
                 if (Convert.ToInt32(sdd[0]) == 1)
                 {
-                    Session["Exn"] = Convert.ToInt32(sdd[1]);
+                    Session["Excellent"] = Convert.ToInt32(sdd[1]);
                 }
                 else if (Convert.ToInt32(sdd[0]) == 2)
                 {
-                    Session["Vgn"] = Convert.ToInt32(sdd[1]);
+                    Session["VeryGood"] = Convert.ToInt32(sdd[1]);
                 }
                 else if (Convert.ToInt32(sdd[0]) == 3)
                 {
-                    Session["Gn"] = Convert.ToInt32(sdd[1]);
+                    Session["Good"] = Convert.ToInt32(sdd[1]);
                 }
                 else if (Convert.ToInt32(sdd[0]) == 4)
                 {
-                    Session["Label6"] = Convert.ToInt32(sdd[1]);
+                    Session["Weak"] = Convert.ToInt32(sdd[1]);
                 }
                 else if (Convert.ToInt32(sdd[0]) == 5)
                 {
-                    Session["Pn"] = Convert.ToInt32(sdd[1]);
+                    Session["Poor"] = Convert.ToInt32(sdd[1]);
                 }
 
             }
 
             connect.Close();
 
-            double ee = Convert.ToInt32(Session["Exn"]);
-            double vgvg = Convert.ToInt32(Session["Vgn"]);
-            double gg = Convert.ToInt32(Session["Gn"]);
-            double Label0 = Convert.ToInt32(Session["Label6"]);
-            double pp = Convert.ToInt32(Session["Pn"]);
-            double tot = ee + vgvg + gg + Label0 + pp;
+            double x1 = Convert.ToInt32(Session["Excellent"]);
+            double x2 = Convert.ToInt32(Session["VeryGood"]);
+            double x3 = Convert.ToInt32(Session["Good"]);
+            double x4 = Convert.ToInt32(Session["Weak"]);
+            double x5 = Convert.ToInt32(Session["Poor"]);
+            double tot = x1 + x2 + x3 + x4 + x5;
             Session["total"] = Convert.ToString(tot);
 
 
-            ///////////////////////////
-            double xxe = (ee / tot);
-            int exavg = Convert.ToInt32(xxe * 100);
-            exp.Width = exavg + '%';
-            exp.Text = Convert.ToString(exavg) + '%';
-            //////
-            double xxv = (vgvg / tot);
-            int vavg = Convert.ToInt32(xxv * 100);
-            vgp.Width = vavg + '%';
-            vgp.Text = Convert.ToString(vavg) + '%';
-            //////
-            double xxg = (gg / tot);
-            int gavg = Convert.ToInt32(xxg * 100);
-            gp.Width = gavg + '%';
-            gp.Text = Convert.ToString(gavg) + '%';
-            //////
-            double xxl = (Label0 / tot);
-            int pavgl = Convert.ToInt32(xxl * 100);
-            mmm.Width = pavgl + '%';
-            mmm.Text = Convert.ToString(pavgl) + '%';
-            //////
-            double xxp = (pp / tot);
-            int pavg = Convert.ToInt32(xxp * 100);
-            ppp.Width = pavg + '%';
-            ppp.Text = Convert.ToString(pavg) + '%';
+
+            double xx1 = (x1 / tot);
+            int exc = Convert.ToInt32(xx1 * 100);
+            Excellent.Width = exc + '%';
+            Excellent.Text = Convert.ToString(exc) + '%';
+
+
+            double xx2 = (x2 / tot);
+            int vgd = Convert.ToInt32(xx2 * 100);
+            VeryGood.Width = vgd + '%';
+            VeryGood.Text = Convert.ToString(vgd) + '%';
+
+
+            double xx3 = (x3 / tot);
+            int goo = Convert.ToInt32(xx3 * 100);
+            Good.Width = goo + '%';
+            Good.Text = Convert.ToString(goo) + '%';
+
+
+            double xx4 = (x4 / tot);
+            int wea = Convert.ToInt32(xx4 * 100);
+            Weak.Width = wea + '%';
+            Weak.Text = Convert.ToString(wea) + '%';
+
+
+            double xx5 = (x5 / tot);
+            int poo = Convert.ToInt32(xx5 * 100);
+            Poor.Width = poo + '%';
+            Poor.Text = Convert.ToString(poo) + '%';
+
+
+
+            SqlConnection connect3 = new SqlConnection("data source=DESKTOP-HDOBIGI\\SQLEXPRESS01;database=voiting; integrated security=SSPI");
+            connect3.Open();
+            SqlCommand cmd2 = new SqlCommand("select sum (theCount) from voit", connect3);
+            int result = (int)cmd2.ExecuteScalar();
+            Label6.Text = result.ToString();
+
+
+
         }
+
+
+
     }
 }

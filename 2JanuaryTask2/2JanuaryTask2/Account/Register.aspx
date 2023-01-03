@@ -36,6 +36,17 @@
                     CssClass="text-danger" Display="Dynamic" ErrorMessage="The password and confirmation password do not match." />
             </div>
         </div>
+
+
+               <div class="form-group">
+            <asp:Label  runat="server" ID="Label1" CssClass="col-md-2 control-label" AssociatedControlID="RadioButtonList1" Text="Role"/>
+                   <asp:RadioButtonList ID="RadioButtonList1" runat="server" OnSelectedIndexChanged="RadioButtonList1_SelectedIndexChanged" RepeatDirection="Horizontal">
+                       <asp:ListItem>Admin</asp:ListItem>
+                       <asp:ListItem>User</asp:ListItem>
+                   </asp:RadioButtonList>
+        </div>
+
+
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <asp:Button runat="server" OnClick="CreateUser_Click" Text="Register" CssClass="btn btn-default" />
