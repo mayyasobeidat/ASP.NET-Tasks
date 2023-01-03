@@ -2,7 +2,7 @@
 
 <div>
             <h3>ما هو مدى رضاك عن الخدمات الالكترونية الخاصة بالتخمين؟</h3>
-            <asp:RadioButtonList ID="answerRadioButtonList" runat="server" RepeatDirection="Horizontal">
+            <asp:RadioButtonList ID="answerRadioButtonList" runat="server" RepeatDirection="Vertical">
                 <asp:ListItem Value="1">ممتاز</asp:ListItem>
                 <asp:ListItem Value="2">جيد جدا</asp:ListItem>
                 <asp:ListItem Value="3">جيد</asp:ListItem>
